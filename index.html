@@ -1,0 +1,70 @@
+<html>
+
+
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<script>
+
+function slideDown()
+{
+  const curtainMenuContainer= document.querySelector(".curtain-menu");
+
+
+  curtainMenuContainer.classList.add("slide-curtain-menu-down");
+
+}
+
+function closeCurtainMenu()
+{
+    const curtainMenuContainer= document.querySelector(".curtain-menu");
+
+    curtainMenuContainer.classList.remove("slide-curtain-menu-down");
+
+}
+
+function slideCurtainRight()
+{
+    const curtainMenuContainer= document.querySelector(".curtain-menu");
+
+    curtainMenuContainer.classList.add("slide-curtain-menu-right");
+}
+</script>
+</head>
+
+
+<body>
+    <div class="button-container">
+
+ <input type="button" class="button-style" value="Slide Down" id="slide-down">
+</div>
+
+ <div class="curtain-menu">
+
+    <input type="image" src="iconfinder_interface-38_809304.svg" id="close">
+
+    <ul class="menu">
+        <li><a href="#"> About </a></li>
+        <li><a href="#"> Services </a></li>
+        <li><a href="#"> Clients </a></li>
+        <li><a href="#"> Contact </a></li>
+    </ul>
+
+ </div>
+
+ <script>
+  const sliderDownButton = document.querySelector("#slide-down");
+  const closeButton = document.querySelector("#close");
+  
+
+  sliderDownButton.addEventListener("click",slideDown);
+
+  closeButton.addEventListener("click",closeCurtainMenu);
+ 
+  
+
+</script>
+
+</body>
+
+</html>
