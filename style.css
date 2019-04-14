@@ -34,19 +34,7 @@ input[type="image"]
     opacity: 0.9;
     overflow: hidden;
     transition:height 0.5s ease-in-out;
- 
-
 }
-.slide-curtain-menu-down.curtain-menu
-{
-    height:100%;
-   
-}
-
-
-
-
-
 .menu
 {
     padding-top:200px;
@@ -67,4 +55,10 @@ padding:15px;
 {
     text-decoration:none;
     color:white;
+}
+
+.slide-curtain-menu-down.curtain-menu
+{
+    height:100%;
+   
 }
